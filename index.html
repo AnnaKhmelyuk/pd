@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Сторінка ANNA</title>
+		<meta  charset="UTF-8" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link href="css/style-slide.css" rel="stylesheet" type="text/css" />
+		<link href="css/jquery.fancybox.min.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+		<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+		<script type="text/javascript" src="js/scripts.js"></script>
+	</head>
+	<body id="page">
+		<ul class="cb-slideshow">
+			<li><span>Image 01</span></li>
+			<li><span>Image 02</span></li>
+			<li><span>Image 03</span></li>
+			<li><span>Image 04</span></li>
+			<li><span>Image 05</span></li>
+			<li><span>Image 06</span></li>          
+		</ul>
+		<div class="userinfo">
+			<div class="userinfo__photo">
+				<img src="images/75_bg2.jpg" width="420" alt="mond" title="imagee">
+			</div>
+			<div class="userinfo__main">
+				<div class="userinfo__title">
+					<div class="userinfo__nickname">
+						<h1>ANNA</h1>
+					</div>
+					<div class="userinfo__prof">
+						<h2>CSS, Html, Javascript master</h2>
+					</div>
+				</div>
+				<div class="userinfo__social-links">
+					<ul>
+						<li>
+							<a href="">
+								<span class="fa fa-vk"></span>
+								<span class="hide">
+									vkontakte 
+								</span>
+							</a>
+						</li>
+						<li>
+<a href="#">
+<span class="fa fa-twitter"></span>
+<span class="hide">
+twitter 
+</span>
+</a>
+</li>
+							<a href="#">
+								<span class="fa fa-link"></span>
+								<span class="hide">
+									link 
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="userinfo_callback">
+				<a class="button fancybox"  href="#form-popup"> Я Вам зателефоную </a>
+			</div>
+			<div class="userinfo__contacts">
+				<div class="userinfo__contacts__row">
+					<a href="tel0991937443" class = "phone-number">+380</a>
+				</div>
+				<div class="userinfo__contacts__row">
+					<a href="mailto:anna@text.test">
+						anna@text.test
+						
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="popups">
+			<form id="form-popup" class="form" action="action.php" method="GET">
+				<div class="form__input" >
+					<input type="text" name="name" placeholder="імя">
+				</div>
+				<div class="form__input" >
+					<input type="text" name="phone" placeholder="ваш телефон">
+				</div>
+				<button class="button"> Подзвоніть мені </button>
+			</form>
+		</div>
+	<script type="text/javascript">
+		$('.fancybox').fancybox();
+		console.log($('.fancybox'))
+	</script>
+	</body>
+</html>
